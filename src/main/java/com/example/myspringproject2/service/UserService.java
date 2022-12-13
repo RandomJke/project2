@@ -22,7 +22,7 @@ public class UserService {
     @Autowired
     private RestTemplate restTemplate;
     ObjectMapper mapper = new ObjectMapper();
-
+///
     public User[] getUserList() throws JsonProcessingException {
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
