@@ -1,11 +1,7 @@
 package com.example.myspringproject2.entity;
 
-import com.example.myspringproject2.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
-
-import java.awt.print.Pageable;
-import java.util.List;
 
 @FeignClient(name = "mySpringProject", url = "http://localhost:8080/users")
 public interface Client {
